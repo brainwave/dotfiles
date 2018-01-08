@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 "Colorschemes
 Plugin 'morhetz/gruvbox'
+Plugin 'romainl/Apprentice'
 "Plugin 'reedes/vim-colors-pencil'
 
 "Brace matcing and syntax replacement
@@ -139,7 +140,7 @@ set nu
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 
-colorscheme gruvbox
+colorscheme apprentice
 
 "Autocommands for text files
 "augroup textFiles
@@ -171,9 +172,9 @@ augroup cpp
 		au BufRead,BufNewFile *.cpp,*.c nmap <leader>cc <C-v>f{%I//<Esc>
 		au BufRead,BufNewFile *.cpp,*.c nmap <leader>c <C-V>f{%hx<Esc>
 		au BufNewFile *.cpp 0r ~/.vim/skeleton.cpp
-		autocmd FileType c,cpp colorscheme gruvbox
-		autocmd FileType c,cpp let g:gruvbox_contrast_dark="hard" 
-		autocmd FileType c,cpp set background=dark
+"		autocmd FileType c,cpp colorscheme gruvbox
+"		autocmd FileType c,cpp let g:gruvbox_contrast_dark="hard" 
+"		autocmd FileType c,cpp set background=dark
 		
 		autocmd filetype cpp nnoremap <F4> :w <bar> exec '!clear && g++ \-lzmq \-ggdb \-std=c++14 \-Iinclude' .shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r') <CR>
 

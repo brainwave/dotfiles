@@ -43,9 +43,13 @@ bindsym $mod+Return exec urxvtc
 # kill focused window
 bindsym $mod+shift+q kill
 
+	client.focused 				#262626 #262626 #ffffff #dddddd
+	client.focused_inactive 	#333333 #333333 #888888 #292d2e
+	client.urgent 				#2f343a #900000 #ffffff #900000
+
 #changing colors of status bar, etc
 #							#border	bg		text	indicator	child_border
-	client.focused          #827839 #493d26 #fff8c6 #000000
+#	client.focused          #827839 #493d26 #fff8c6 #000000
 #	client.focused          #827839 #26466D #ffffff #00da8e
 
 #	client.focused_inactive #333333 #5f676a #ffffff #484e50
@@ -59,7 +63,7 @@ bindsym $mod+shift+q kill
 
 #bindsym $mod+d exec dmenu_run -nb '#323232' -sf '#ffffff'
 
-bindsym $mod+d exec rofi -theme gruvbox-dark -show drun -location 3
+bindsym $mod+d exec rofi -show drun -location 3
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -231,6 +235,8 @@ for_window [class="Blueberry"] floating enable
 #Browser
 #bindsym $mod+b exec --no-startup-id chromium
 	bindsym $mod+b exec GTK_THEME=Adwaita:light firefox 
+#	bindsym $mod+b exec firefox
+	bindsym $mod+Shift+b exec firefox --private
 #	bindsym $mod+Shift+b exec f --incognito
 
 
@@ -313,15 +319,15 @@ exec --no-startup-id setxkbmap -option caps:swapescape
 exec --no-startup-id dunst
 
 # set primary gruvbox colorscheme colors
-set $bg #282828
-set $red #cc241d
-set $green #98971a
-set $yellow #d79921
-set $blue #458588
-set $purple #b16286
-set $aqua #689d68
-set $gray #a89984
-set $darkgray #1d2021
+set $bg #262626
+##set $red #cc241d
+#set $green #98971a
+#set $yellow #d79921
+#set $blue #458588
+#set $purple #b16286
+#set $aqua #689d68
+#set $gray #a89984
+#set $darkgray #1d2021
 
 bar {
 
@@ -329,16 +335,15 @@ bar {
 	 
 	colors {
         # bar background color
-        background $bg
-        statusline #ebdbb2
-        focused_workspace    $aqua $aqua $darkgray
-        inactive_workspace   $darkgray $darkgray $yellow
-        active_workspace     $darkgray $darkgray $yellow
-        urgent_workspace     $red $red $bg
+   background $bg
+#        statusline #ebdbb2
+#        focused_workspace    $aqua $aqua $darkgray
+#        inactive_workspace   $darkgray $darkgray $yellow
+#        active_workspace     $darkgray $darkgray $yellow
+#        urgent_workspace     $red $red $bg
 	}
 	separator_symbol " | "
 #	mode hide 
     status_command "i3status" 
 #status_command "python ~/test.py"
-
 }
