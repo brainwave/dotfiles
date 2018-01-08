@@ -33,9 +33,9 @@ floating_modifier $mod
 
 focus_follows_mouse no
 
-exec --no-startup-id urxvtd
+#exec --no-startup-id urxvtd
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec xterm
 #bindsym $mod+Return exec termite
 #
 #bindsym $mod+ exec gvim
