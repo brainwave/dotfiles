@@ -1,0 +1,45 @@
+!Uncomment to invert	
+!XTerm.vt100.reverseVideo: true
+
+*faceName: Fira Mono
+*faceSize: 11
+
+!*.reverseVideo: true
+
+
+
+!XTerm*loginshell: true
+
+*termName: xterm-256color
+
+
+!XTerm*VT100.locale: true
+
+XTerm*VT100.translations: \n\
+        Ctrl Shift <Key>C:copy-selection(CLIPBOARD) \n\
+        Ctrl Shift <Key>V:insert-selection(CLIPBOARD)
+
+XTerm*scrollBar: false
+XTerm*saveLines: 65535
+
+*.foreground:   #000000
+*.background:   #dcdcdc
+*.cursorColor:  #545855
+*.color0:       #3c3e3c
+*.color8:       #545855
+*.color1:       #ac4c64
+*.color9:       #ac4c64
+*.color2:       #5acc77
+*.color10:      #4cac64
+*.color3:       #ac8b4c
+*.color11:      #ab894b
+*.color4:       #5a77cc
+*.color12:      #4c64ac
+*.color5:       #a14cac
+*.color13:      #a04bab
+*.color6:       #5ab3cc
+*.color14:      #4b96ab
+*.color7:       #eff3f0
+*.color15:      #f2f6f3
+
+
