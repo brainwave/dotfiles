@@ -51,7 +51,7 @@ bindsym $mod+shift+q kill
 #							#border	bg		text	indicator	child_border
 #	client.focused          #827839 #493d26 #fff8c6 #000000
 #	client.focused          #827839 #26466D #ffffff #00da8e
-
+#
 #	client.focused_inactive #333333 #5f676a #ffffff #484e50
 #	client.unfocused        #333333 #42526C #c8b560 #292d2e
 #	client.urgent           #c10004 #900000 #ffffff #900000
@@ -319,28 +319,28 @@ exec --no-startup-id setxkbmap -option caps:swapescape
 exec --no-startup-id dunst
 
 # set primary gruvbox colorscheme colors
-set $bg #262626
-##set $red #cc241d
-#set $green #98971a
-#set $yellow #d79921
-#set $blue #458588
-#set $purple #b16286
-#set $aqua #689d68
-#set $gray #a89984
-#set $darkgray #1d2021
+set $bg #282828
+set $red #cc241d
+set $green #98971a
+set $yellow #d79921
+set $blue #458588
+set $purple #b16286
+set $aqua #689d68
+set $gray #a89984
+set $darkgray #1d2021
 
 bar {
 
-	font pango:Roboto Condensed, Font Awesome 10
+	font pango:Droid Sans, Font Awesome 9.5
 	 
 	colors {
         # bar background color
    background $bg
-#        statusline #ebdbb2
-#        focused_workspace    $aqua $aqua $darkgray
-#        inactive_workspace   $darkgray $darkgray $yellow
-#        active_workspace     $darkgray $darkgray $yellow
-#        urgent_workspace     $red $red $bg
+        statusline #ebdbb2
+        focused_workspace    $aqua $aqua $darkgray
+        inactive_workspace   $darkgray $darkgray $yellow
+        active_workspace     $darkgray $darkgray $yellow
+        urgent_workspace     $red $red $bg
 	}
 	separator_symbol " | "
 #	mode hide 

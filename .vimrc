@@ -140,7 +140,7 @@ set nu
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 
-colorscheme his
+colorscheme gruvbox
 
 "Autocommands for text files
 "augroup textFiles

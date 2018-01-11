@@ -1,4 +1,6 @@
-*font: xft:Dejavu Sans Mono:size=11
+*font: xft:Inconsolata:size=13:style=Bold
+
+rofi.font: Cantarell 12
 
 *termName: xterm-256color
 
@@ -16,39 +18,32 @@
 ! License:    MIT
 ! Apprentice colorscheme
 ! special
-*.foreground:   #bcbcbc
-*.background:   #262626
-*.cursorColor:  #bcbcbc
-
-! black
-*.color0:       #1c1c1c
-*.color8:       #444444
-
-! red
-*.color1:       #af5f5f
-*.color9:       #ff8700
-
-! green
-*.color2:       #5f875f
-*.color10:      #87af87
-
-! yellow
-*.color3:       #87875f
-*.color11:      #ffffaf
-
-! blue
-*.color4:       #5f87af
-*.color12:      #8fafd7
-
-! magenta
-*.color5:       #5f5f87
-*.color13:      #8787af
-
-! cyan
-*.color6:       #5f8787
-*.color14:      #5fafaf
-
-! white
-*.color7:       #6c6c6c
-*.color15: #ffffff
+! hard contrast: *background: #1d2021
+*background: #282828
+! soft contrast: *background: #32302f
+*foreground: #ebdbb2
+! Black + DarkGrey
+*color0:  #282828
+*color8:  #928374
+! DarkRed + Red
+*color1:  #cc241d
+*color9:  #fb4934
+! DarkGreen + Green
+*color2:  #98971a
+*color10: #b8bb26
+! DarkYellow + Yellow
+*color3:  #d79921
+*color11: #fabd2f
+! DarkBlue + Blue
+*color4:  #458588
+*color12: #83a598
+! DarkMagenta + Magenta
+*color5:  #b16286
+*color13: #d3869b
+! DarkCyan + Cyan
+*color6:  #689d6a
+*color14: #8ec07c
+! LightGrey + White
+*color7:  #a89984
+*color15: #ebdbb2
 
