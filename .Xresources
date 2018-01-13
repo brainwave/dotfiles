@@ -1,6 +1,6 @@
 *font: xft:Inconsolata:size=13:style=Bold
 
-rofi.font: Cantarell 12
+rofi.font: Inconsolata Bold 13
 
 *termName: xterm-256color
 
