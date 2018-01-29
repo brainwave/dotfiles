@@ -57,20 +57,21 @@ load {
 }
 
 disk "/" {
-# prefix=decimal
-        format = ": %free (%percentage_used used)"
+ 		prefix_type="decimal"
+        format = ": %free(%total)"
 }
 
 disk "/home/brainwave/Hope" {
-	format = ":%free(%percentage_used used)" 
+	prefix_type="decimal"
+	format = ":%free(%total)" 
 }
 		
 cpu_temperature 0 {
-	path= "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input"
+	path= "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input"
 	format = " Core 1: %degrees °C "
 }
 cpu_temperature 1 {
 
 	format = " Core 2: %degrees °C "
-	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon1/temp2_input"
+	path = "/sys/devices/platform/coretemp.0/hwmon/hwmon2/temp2_input"
 	}

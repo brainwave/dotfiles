@@ -26,13 +26,21 @@ Plugin 'tpope/vim-surround'
 Plugin 'lervag/vimtex'
 
 "Plugin for taking notes in vim - emulating emacs org-mode
-Plugin 'jceb/vim-orgmode'
+"Plugin 'jceb/vim-orgmode'
 
 "Recognize url links
 Plugin 'vim-scripts/utl.vim'
 
 "UTL wants speedating plugin
-Plugin 'tpope/vim-speeddating'
+"Plugin 'tpope/vim-speeddating'
+
+"Markdown support, github flavor
+Plugin 'shime/vim-livedown'
+"Plugin 'gabrielelana/vim-markdown'
+"
+Plugin 'fatih/vim-go'
+
+Plugin 'vim-scripts/bash-support.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

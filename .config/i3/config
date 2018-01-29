@@ -221,8 +221,8 @@ for_window [class="Blueberry"] floating enable
 #Key Bindings
 
 #Brightness keys
-	bindsym XF86MonBrightnessUp exec backlight 20
-	bindsym XF86MonBrightnessDown exec backlight -20
+	bindsym XF86MonBrightnessUp exec backlight +5
+	bindsym XF86MonBrightnessDown exec backlight -5
 
 #File manager
 	bindsym $mod+t exec nemo

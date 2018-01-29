@@ -57,12 +57,13 @@ load {
 }
 
 disk "/" {
-# prefix=decimal
-        format = ": %free (%percentage_used used)"
+ 		prefix_type="decimal"
+        format = ": %free(%total)"
 }
 
 disk "/home/brainwave/Hope" {
-	format = ":%free(%percentage_used used)" 
+	prefix_type="decimal"
+	format = ":%free(%total)" 
 }
 		
 cpu_temperature 0 {
