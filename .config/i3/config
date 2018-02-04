@@ -243,6 +243,7 @@ for_window [class="Blueberry"] floating enable
 #Screenlock
 #	bindsym Mod1+L exec --no-startup-id "i3lock -i -d -i ~/Wallpapers/Lockscreen/arch-linux-png-117112.jpg -t -f && sleep 5 && xset dpms force off"
 #	bindsym Mod1+L exec --no-startup-id "i3lock-fancy"
+	bindsym Mod1+L exec --no-startup-id "xlock -mode pacman"
 
 #	bindsym XF86LaunchA exec xterm -e "~/bin/tasklist"
 	bindsym XF86LaunchA exec xterm -class "ToDo" -e "vit"
